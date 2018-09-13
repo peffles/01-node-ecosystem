@@ -1,43 +1,32 @@
-![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem
-===
 
-## Submission Instructions
-* Work in a fork of this repository
-* Work in a branch on your fork
-* Open a pull request to this repository
-* Submit on canvas a question and observation, how long you spent, and a link to your pull request
+## Documentation
 
-## Configuration
-Configure the root of your repository with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
+# Project Name: 01-Node Ecosystem
 
-* **README.md** - contains your documentation
-* **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
-* **.eslintrc.json** - contains the course linter configuration
-* **.eslintignore** - contains the course linter ignore configuration
-* **.travis.yml** - contains your travis testing instructions
-* **package.json** - contains npm package config 
-  * jest and eslint must be dependencies
-  * create a `lint` script for running eslint `"lint": "eslint **/.js"`
-  * create a `test` script for running tests
-* **lib/** - contains module definitions
-* **__test__/** - contains unit tests
+**Authors**: Wyatt Pefley.
+**Version**: 1.0.0
+## Overview
+During this lab, I created two methods: `arithmetic.add` and `arithmetic.sub`,These methods are used to add numbers and subtract numbers respectively. In addition, I also wrote tests for these methods to ensure the quality of my code. I also modularized my code to adhere to the speraration of concerns idea and to keep a clean and tidy codebase.
 
-## Testing
+## Getting Started
+1. Fork original repo on the Code Fellows GitHub.
+2. Clone the repo onto your local machine in order to link it to GitHub.
+3. Read over the instructions in order to understand what you are being asked to do. 
+4. Create methods for adding and subtracting.
+5. Write if statements to prevent invalid entries.
+6. Write tests for the methods in order to save time debigging and to better understand what you need to do.
 
-### Arithmetic Module Tests
-* Test each method for proper use (invoked with number arguments)
-* Test each method for inproper use (invoked with one or more non-number arguments)
+## Architecture
+### Languages Used: 
+1. JavaScript (ES6)
+### Frameworks Used:
+1. Node JS 
+2. Jest
 
-## Feature Tasks
-
-### Arithmetic Module
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have `add` and `sub` methods that implement addition and subtraction.
-* The `add` method should have a 2 parameters (arity of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (arity of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the second parameter subtracted from the first parameter
-
-### Documentation
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+## Change Log
+4:00 - Forked the original repo and cloning it to our local machines
+4:20 - If statement to prevent an invalid entry. 
+6:10 - Created `arithmetic.add` and `arithmetic.sub` methods (each with an airty of two 'num1' and 'num2')
+6:15 - If statement to prevent an invalid entry.
+6:30 - `arithmetic.add` and `arithmetic.sub` now take in two numbers each and outputs their sum and their difference.
+7:50 - All tests passing. 
